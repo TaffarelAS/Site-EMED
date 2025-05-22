@@ -8,11 +8,12 @@ body {
 
 main {
     display: flex;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     height: 805px;
     margin: 0px;
     padding: 0px;
-    background-image: url(images/guerrilhas.jpg);
+    background-image: url(images/ia.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +35,9 @@ main {
 
 .navbar ul {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -49,6 +53,7 @@ main {
 }
 
 .navbar li {
+    margin: 40px;
     float: left;
 }
 
@@ -67,6 +72,8 @@ main {
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255, 0.6);
     width: 500px;
     margin: 20px;
@@ -93,6 +100,13 @@ main {
     margin: 20px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.espaco {
+    height: 35px;
+    width: 5px;
+    background-color: #ffffff;
 }
 
 #logo {
