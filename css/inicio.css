@@ -13,13 +13,62 @@ main {
     height: 805px;
     margin: 0px;
     padding: 0px;
-    background-image: url(images/ia.png);
+    background-image: url(/images/ia.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    overflow: hidden;  
+    overflow: hidden;
 }
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    font-family: "Ancizar Serif", serif;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #4e2809;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.dropdown a {
+    display: block;
+    color: #b56e36;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #b56e36;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 100%, 50%);
+    transition-duration: 0.2s;
+}
+
+header a:hover {
+    background-color: hsl(0, 0%, 100%, 50%);
+    transition-duration: 0.2s;
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 100%, 50%);
+    transition-duration: 0.2s;
+}
+
 
 .header {
     background-color: #4e2809;
@@ -33,9 +82,10 @@ main {
     font-weight: bold;
 }
 
-.navbar ul {
+.navbar {
+    width: 1400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     padding: 0px;
@@ -49,11 +99,6 @@ main {
     padding: 15px;
     display: block;
     text-align: center;
-}
-
-.navbar li {
-    margin: 40px;
-    float: left;
 }
 
 .search {
@@ -80,13 +125,13 @@ main {
     border-radius: 10px;
 }
 
-.footer{
+.footer {
     height: 70px;
     background-color: #b56e36;
     display: flex;
 }
 
-.contact{
+.contact {
     margin: 20px;
     padding: 0px;
     font-size: 25px;
