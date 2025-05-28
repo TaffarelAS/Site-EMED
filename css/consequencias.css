@@ -13,7 +13,7 @@ main {
     height: 805px;
     margin: 0px;
     padding: 0px;
-    background-image: url(images/consequencias2.webp);
+    background-image: url(/images/consequencias2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
