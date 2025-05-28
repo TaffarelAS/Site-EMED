@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Ancizar Serif", serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 805px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/novaimagem.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dropdownMobile {
+    display: none;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    font-family: "Ancizar Serif", serif;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #4e2809;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.dropdown a {
+    display: block;
+    color: #b56e36;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #b56e36;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 100%, 50%);
+    transition-duration: 0.2s;
+}
+
+header a:hover {
+    background-color: hsl(0, 0%, 100%, 50%);
+    transition-duration: 0.2s;
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 100%, 50%);
+    transition-duration: 0.2s;
+}
+
+
+.header {
+    background-color: #4e2809;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 70px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar {
+    width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.search {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.title {
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.726);
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    height: 70px;
+    background-color: #b56e36;
+    display: flex;
+}
+
+.contact {
+    margin: 20px;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.social {
+    width: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.espaco {
+    height: 35px;
+    width: 5px;
+    background-color: #ffffff;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+@media (max-width:800px) {
+    #logo {
+        font-size: 25px;
+    }
+
+    .dropdownMobile {
+        display: inline-block;
+    }
+
+    .dropdownMobile button {
+        font-family: "Ancizar Serif", serif;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: #4e2809;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .dropdown a {
+        display: block;
+        color: #b56e36;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    .dropdownMobile .content {
+        display: none;
+        position: absolute;
+        background-color: #b56e36;
+        min-width: 10px;
+        box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+    }
+
+    .dropdownMobile:hover .content {
+        display: block;
+    }
+
+    .dropdownMobile:hover button {
+        background-color: hsl(0, 0%, 100%, 50%);
+        transition-duration: 0.2s;
+    }
+
+    .dropdownMobile a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    .title {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .article {
+        width: 250px;
+        font-size: 12.5px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+    }
+
+    .footer .contact {
+        font-size: 20px;
+    }
+}
