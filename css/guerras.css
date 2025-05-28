@@ -13,7 +13,7 @@ main {
     height: 805px;
     margin: 0px;
     padding: 0px;
-    background-image: url(/images/guerrilhas.jpg);
+    background-image: url(../images/guerrilhas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
